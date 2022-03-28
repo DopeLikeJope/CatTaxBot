@@ -4,7 +4,8 @@
   "description": "Just a Discord Bot that asks people for the Cat Tax(Pictures of their cats)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ts-node src/Bot.ts"
   },
   "repository": {
     "type": "git",
