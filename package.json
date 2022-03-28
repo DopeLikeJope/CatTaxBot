@@ -1,0 +1,28 @@
+{
+  "name": "CatTaxBot",
+  "version": "1.0.0",
+  "description": "Just a Discord Bot that asks people for the Cat Tax(Pictures of their cats)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DopeLikeJope/CatTaxBot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DopeLikeJope/CatTaxBot/issues"
+  },
+  "homepage": "https://github.com/DopeLikeJope/CatTaxBot#readme",
+  "devDependencies": {
+    "typescript": "^4.6.3"
+  },
+  "dependencies": {
+    "@discordjs/rest": "^0.3.0",
+    "discord-api-types": "^0.30.0",
+    "discord.js": "^13.6.0"
+  }
+}
