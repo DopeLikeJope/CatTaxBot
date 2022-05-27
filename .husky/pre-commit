@@ -13,7 +13,7 @@ npm run check-format || (
     false;
 )
 
-npm run check-lint || (
+npm run lint || (
     echo "Bruh, ESLint check failed, make the above changes"
     false;
 )
