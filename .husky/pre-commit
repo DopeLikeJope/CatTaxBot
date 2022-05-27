@@ -1,0 +1,21 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+echo "checking style..."
+
+npm run check-types || (
+    echo "FAILED Type Checking, make the above changes"
+    false;
+)
+
+npm run check-format || (
+    echo "Your styling is awful 🤢, run \"npm run format\" before commiting"
+    false;
+)
+
+npm run check-lint || (
+    echo "Bruh, ESLint check failed, make the above changes"
+    false;
+)
+
+echo "Niiiiiiiiiiiiiiiiiiiiiiiiice! 😎"
