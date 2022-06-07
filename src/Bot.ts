@@ -12,8 +12,14 @@ const client = new Client({
   ]
 });
 
-client.login(process.env.BOT_TOKEN);
+client.on("ready", () => {
+  // update the status of the bot every 10 minutes
+  setInterval(() => {
+    client.user?.setActivity(
+      `${client.guilds.cache.size} guilds for cat pictures`,
+      { type: "WATCHING" }
+    );
+  }, 6000 * 10);
+});
 
-client.user?.setActivity(
-  `Taxing ${client.guilds.cache.size} guilds for cat pcitures`
-);
+client.login(process.env.BOT_TOKEN);
